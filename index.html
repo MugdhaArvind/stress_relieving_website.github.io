@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNWIND</title>
+  <link rel="icon" href="/images/logo.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="/images/logo.png" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--animate on scroll library-->
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .back-top-wrap {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    background-color: #d4e0de;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    z-index: 100;
+  }
+
+  .back-top-wrap:hover {
+    background-color: #00a2ff;
+    color: #80F7D1;
+  }
+
+  .back-top-wrap:hover .fas.fa-arrow-up {
+    color: white;
+  }
+
+  .fas.fa-arrow-up {
+    color: #00488F;
+    transition: 0.3s ease-in-out;
+  }
+</style>
+
+<body onload="myFunction()">
+  <div class="loading-wrapper">
+    <img src="./logo.png" id="loading" />
+  </div>
+
+  <!-- Back to top button -->
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  <header>
+    <nav class="nav" id="nav">
+      <div>
+        <a class="navbar-brand" href="#!"> <img src="logo.png" alt="Logo" class="logo" /></a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul class="links" id="navmenu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES </a></li>
+          <li><a href="html/contact.html">CONTACT US </a></li>
+        </ul>
+      </div>
+      <button class="login-button"><a href="html/login.html">SignUp / Login</a></button>
+      <div class="hamburger" id="ham">
+        <i class="cancel fa-solid fa-xmark"></i>
+
+        
+      </div>
+    </nav>
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="#">HOME</a></li>
+        
+        <li><a href="#services">SERVICES </a></li>
+        <li><a href="html/contact.html">CONTACT US </a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Welcome to Unwind</h1>
+      <div class="container">
+        <h3><span class="auto-type" style="font-size: 40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></a></span></h3>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
+          strings: ["Discover Tranquility with Every Breath - Unlock the Path to a Life, Free from Stress"],
+          typeSpeed: 60,
+          backspeed: 60,
+          loop: true
+        })
+      </script>
+      <a href="#services" class="rainbow-button" alt="Explore"></a>
+    </div>
+
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1 data-aos="flip-right">About Us</h1>
+    <div class="max-width">
+      <div data-aos="zoom-in" class="photo"><img src="./images/about.jpg" alt="" height="300px" width="330px"></div>
+      <div class="about-content">
+        <p data-aos="fade-left" class="text-1"> Our website is dedicated to offering you a wide array of<span> stress-relieving techniques and practices</span> that can be easily incorporated into your routine.We as a team believe that <span>truewellness is in nurturing mind, body and soul.</span> Whether you're looking for quick relaxation exercises to calm your mind during a hectic day or seeking in-depth mindfulness practices to cultivate inner peace, we have something for everyone.</p>
+        
+      </div>
+    </div>
+    <h3><span style="color: rgb(91, 134, 150);">MEET OUR MEMBERS</span></h3>
+
+    <div class="box">
+
+      <div data-aos="fade-up" ddata-aos-duration="800" class="card">
+        <img src="./images/nan.jpg" alt="Nandini Pajgade" loading="lazy" height="400px" width="430px" >
+        <h5>Nandini Pajgade</h5>
+        <div class="pra">
+          
+          <a href="https://www.linkedin.com/in/nandini-pajgade-4a3351230/"><button>Let's Connect</button></a>
+        </div>
+      </div>
+
+      
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="./images/meg.jpg" alt="Megha" loading="lazy" >
+        <h5>Megha</h5>
+        <div class="pra">
+          
+          <a href="https://www.linkedin.com/in/megha-79a744231"><button>Let's Connect</button></a>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="./images/mug.jpg" alt="Mugdha Arvind" loading="lazy" >
+        <h5>Mugdha Arvind</h5>
+        <div class="pra">
+          
+          <a href="https://www.linkedin.com/in/mugdha-arvind-490a1b231"><button>Let's Connect</button></a>
+        </div>
+        
+
+       
+
+      </div>
+      <div data-aos="fade-up" ddata-aos-duration="800" class="card">
+        <img src="./images/talaksha.jpg" alt="Talaksha Chavan" loading="lazy" >
+        <h5>Talaksha Chavan</h5>
+        <div class="pra">
+          <a href="https://www.linkedin.com/in/talaksha-chavan-421743231"><button>Let's Connect</button></a>
+        </div>
+      </div>
+
+
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="./images/sharm.jpg" alt="Sharmishtha Sattuwar" loading="lazy" >
+        <h5>Sharmishtha Sattuwar</h5>
+        <div class="pra">
+          
+          <a href="https://www.linkedin.com/in/sharmishtha-satturwar-640b9622b"><button>Let's Connect</button></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+    
+
+
+  
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <h1>Our Services</h1>
+    <div data-aos="zoom-in" data-aos-duration="800" class="container">
+      <div class="responsive audio">
+        <div class="round-image">
+          <img src="./images/audio.png" alt="audio" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Audio</h2>
+          <p>
+            Discover new worlds through sound
+          </p>
+          <a href="html/audioTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="round-image">
+          <img src="./images/reading.png" alt="read" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Reading</h2>
+          <p>
+            Expand your mind with reading. Where every story is a journey
+          </p>
+          <a href="html/readingTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive yoga">
+        <div class="round-image">
+          <img src="./images/yoga.png" alt="yoga" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Yoga</h2>
+          <p>
+            Breathe in. Breathe out. Namaste, Unleash the power of your mind and body.
+          </p>
+          <a href="html/yogatherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      
+      
+      
+      
+    </div>
+  </section>
+
+  
+  
+   
+
+  <!-- footer start -->
+  <footer>
+    <div class="footer-container">
+      <!--logo and info column-->
+      <div class="col">
+        <!--logo insert-->
+        <img src="logo.png" alt="logo" class="footlogo" />
+        <div class="footercontent">
+          <h2 class="footerheading">Unwind</h2>
+          <p class="footerpara">Happier You</p>
+        </div>
+      </div>
+
+      <!--ADDRESS COLUMN-->
+
+      <div class="footer-side-col">
+        <div class="col">
+          <h3>
+            ADDRESS
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Maharashtra,India</p>
+          
+        </div>
+        <!--HOME COLUMN-->
+        <div class="col">
+          <h3>HOME</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            
+          </ul>
+        </div>
+        
+        <!--OUR SERVICES COLUMN-->
+        <div class="col">
+          <h3>
+            SERVICES
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li>
+              <a href="http://127.0.0.1:5500/html/audioTherapy.html#audiobooks">Audio</a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:5500/html/yogatherapy.html">Yoga</a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:5500/html/readingTherapy.html">Reading</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--CONTACTS COLUMN-->
+        <div class="col">
+          <h3>
+           
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+
+    let preloader = document.querySelector(".loading-wrapper");
+    function myFunction() {
+      preloader.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    let navbar = document.querySelector("#nav");
+    let navmenu = document.querySelector("#navmenu");
+
+    window.onscroll = function () {
+      if (window.pageYOffset >= navmenu.offsetTop) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    window.onscroll = () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+      } else {
+        navbar.classList.remove('nav-active');
+      }
+    };
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./serviceworker.js')
+          .then((reg) => console.log('Success', reg.scope))
+          .catch((err) => console.log('Error', err))
+      })
+    }
+  </script>
+  <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
